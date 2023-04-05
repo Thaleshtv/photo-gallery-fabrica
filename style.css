@@ -1,0 +1,108 @@
+:root {
+    --background-color: #F6F6F6;
+    --primary-color: #1B3B48;
+    --white: #fff;
+    --grey: #E7E7E7;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--background-color);
+    --webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+textarea,
+button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+button {
+    cursor: pointer;
+}
+
+[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.header {
+    background-color: var(--primary-color);
+}
+
+.header header {
+    padding: 2.875rem 0;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: var(--white);
+}
+
+.contentCard {
+    display: flex;
+    align-items: center;
+    gap : 2rem;
+    flex-wrap: wrap;
+}
+
+#lugar-imagens {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0rem;
+    min-height: 80vh;
+}
+
+.buttonGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.buttonGroup button{
+    padding: 0.5rem 1rem;
+    border: 0;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 0.25rem;
+    font-weight: 600;
+}
+
+.selectContent {
+    width: 25%;
+    margin-top: 2rem;
+}
+
+.loading {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
